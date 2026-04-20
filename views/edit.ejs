@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <a href="/show-students" class="form-tag"> <button type="button" class="btn">Show Students</button> </a>
+    <div class="container">
+    <form action="/update-student" method="post" enctype="multipart/form-data" class="f">
+        <h1>EDIT STUDENT</h1>
+        <input type="hidden" name="id" value="<%= foundUser._id %>">
+
+        <input type="file" name="image" id="" class="aa"><br>
+    <!-- <label for="">Enter Name</label><br> -->
+    <input value="<%=foundUser.name%>" type="text" name="name" placeholder="Enter Name" class="aa"><br>
+     <!-- <label for="">Enter Email</label><br> -->
+    <input value="<%=foundUser.email%>" type="email" name="email" placeholder="Enter email"class="aa"><br>
+    <!-- <label for="">Enter course</label><br> -->
+    <input value="<%=foundUser.course%>" type="course" name="course" placeholder="Enter course"class="aa"><br>
+    <button type="submit"class="bb">update-student</button><br>
+        
+
+    </form>
+    </div>
+</body>
+</html>

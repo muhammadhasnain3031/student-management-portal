@@ -1,0 +1,30 @@
+<body>
+    <link rel="stylesheet" href="/style.css">
+    <h1 class="main-title">Enterprise Student Directory</h1>
+    
+    <div style="text-align: center; margin-bottom: 30px;">
+        <a href="/"> <button class="btn3">Add New Student</button> </a>
+    </div>
+
+    <div class="students-container">
+        <% users.forEach((userData)=>{ %>
+            <div class="student-card">
+                <img src="/uploads/<%= userData._id %>.<%= userData.image.split('.').pop() %>" alt="Profile">
+                <h1><%= userData.name %></h1>
+                <p>📧 <%= userData.email %></p>
+                <p>🎓 <%= userData.course %></p>
+                
+                <div class="button1">
+                    <form action="/delete" method="post"> 
+                        <input type="hidden" name="id" value="<%= userData._id %>"/>
+                        <button class="btn2" type="submit" onclick="return confirm('Wipe this data?')">Delete</button>
+                    </form>
+                    <form action="/edit" method="post">
+                        <input type="hidden" name="id" value="<%= userData._id %>"/>
+                        <button class="btn3" type="submit">Edit</button>
+                    </form>
+                </div>  
+            </div>
+        <% }) %>
+    </div>
+</body>
