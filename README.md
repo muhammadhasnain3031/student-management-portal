@@ -21,6 +21,8 @@ https://student-management-portal-self.vercel.app/
 ## 📸 Screenshots
 <img width="856" height="850" alt="image" src="https://github.com/user-attachments/assets/340a43d5-99a3-4d2b-acaf-1c42f4599acd" />
 <img width="1602" height="884" alt="image" src="https://github.com/user-attachments/assets/ea22353e-62a8-4c8e-af2d-25c491e2684c" />
+<img width="1884" height="872" alt="image" src="https://github.com/user-attachments/assets/9897c7d7-ca7b-44fa-a604-97c5fc080df3" />
+
 
 
 
